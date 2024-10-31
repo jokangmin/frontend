@@ -1,0 +1,78 @@
+.boardContainer {
+    margin: 20px;
+    font-family: 'Arial', sans-serif; /* 글꼴 추가 */
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* 제목 색상 */
+}
+
+.boardTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    overflow: hidden; /* 둥글게 하기 위해 overflow 숨김 */
+}
+
+.boardTable th:nth-child(1),
+.boardTable td:nth-child(1) {
+    width: 10%; /* 번호 */
+}
+
+.boardTable th:nth-child(2),
+.boardTable td:nth-child(2) {
+    width: 50%; /* 제목 */
+}
+
+.boardTable th:nth-child(3),
+.boardTable td:nth-child(3) {
+    width: 25%; /* 작성자 */
+}
+
+.boardTable th:nth-child(4),
+.boardTable td:nth-child(4) {
+    width: 25%; /* 작성일 */
+}
+
+.boardTable th, .boardTable td {
+    border: 1px solid #e0e0e0; /* 부드러운 테두리 */
+    padding: 15px; /* 여백 추가 */
+    text-align: left;
+    transition: background-color 0.3s; /* 호버 효과에 부드러운 전환 추가 */
+}
+
+.boardTable th {
+    background-color: #afc5d0; /* 헤더 배경색 */
+    color: white; /* 헤더 글자 색상 */
+    font-weight: bold; /* 헤더 글자 두께 */
+}
+
+.boardTable tr:nth-child(even) {
+    background-color: #f7f7f7; /* 짝수 행 배경색 */
+}
+
+.boardTable tr:hover {
+    background-color: #e9e9e9; /* 호버 시 배경색 */
+}
+
+.boardTable td {
+    font-size: 14px; /* 글자 크기 조절 */
+    color: #555; /* 글자 색상 */
+}
+
+.link {
+    color: #30353a; /* 파란색으로 설정 */
+    text-decoration: none; /* 밑줄 제거 */
+    font-weight: bold;
+    transition: color 0.3s ease; /* 부드러운 색상 전환 */
+}
+
+/* 링크 호버 스타일 */
+.link:hover {
+    color: #0056b3; /* 어두운 파란색으로 변경 */
+    text-decoration: underline; /* 마우스 올렸을 때 밑줄 */
+}
